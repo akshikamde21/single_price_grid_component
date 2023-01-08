@@ -1,0 +1,90 @@
+.attribution { font-size: 11px; text-align: center; color: hsl(218, 22%, 67%) }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body{
+  margin: 10%;
+  background-color: hsl(204, 43%, 89%); /*light grey*/
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  'header header' 
+  'subscribe whyus';
+  align-content: center;
+  padding: 5%;
+}
+
+.grid-item1{
+  grid-area: header;
+  background-color: whitesmoke;
+  color:  hsl(179, 62%, 43%);
+  padding: 5%;
+
+}
+.grid-item2{
+  grid-area: subscribe;
+  background-color: hsl(179, 62%, 43%);
+  color: whitesmoke;
+  padding: 8%
+}
+
+.button1 {
+  background-color: hsl(71, 73%, 54%); 
+  color: whitesmoke; 
+  border: 5px;
+  width: 100%;
+  text-align: centre;
+  padding: 4%;
+  border-radius: 8px;
+  font-family: 'Karla', sans-serif;
+  box-shadow: 3px 8px 8px darkcyan;
+  font-size: 16px;
+}
+
+.button1:hover {
+  background-color: hsl(218, 22%, 80%);
+  color: white;
+}
+.grid-item3{
+  grid-area: whyus;
+  background-color:hsl(179, 62%, 46%);
+  color: whitesmoke;
+  padding: 8%;
+}
+
+@media only screen and (max-width: 375px){
+  .grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'header''subscribe''whyus'; 
+  }
+}
+
+h1{
+  display: inline;
+}
+.lightp{
+  display: inline;
+  color: whitesmoke ;
+}
+p{
+  color: whitesmoke;
+  line-height: 1.5;
+}
+
+.greytext{
+  color:hsl(218, 22%, 67%) ;
+}
+.yellowtext{
+  color:hsl(71, 73%, 54%) ;
+}
+.subscribepara{
+  color: whitesmoke;
+}
